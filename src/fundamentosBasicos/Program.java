@@ -3,13 +3,15 @@ package fundamentosBasicos;
 public class Program {
 
 	public static void main(String[] args) {
-		Pessoa pessoa = new Pessoa();
 
-		pessoa.nome = "Lucas";
-		pessoa.sobrenome = "Daniel";
-		pessoa.idade = 24;
+		String nome = "Lucas";
+		String sobrenome = "Daniel";
+		int idade = 24;
 		
-		System.out.println(pessoa.nome + " "+pessoa.sobrenome+" tem "+pessoa.idade);
+		Pessoa pessoa = new Pessoa(nome,sobrenome,idade);
+		
+		
+		System.out.println(pessoa);
 	}
 
 }
