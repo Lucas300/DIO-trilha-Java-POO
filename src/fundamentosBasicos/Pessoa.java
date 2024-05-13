@@ -5,6 +5,7 @@ public class Pessoa {
 	private String nome;
 	private String sobrenome;
 	private int idade;
+	private Estado_civil Estado_civil;
 	
 	//construtor
 		public Pessoa() {
@@ -12,15 +13,19 @@ public class Pessoa {
 		}
 	
 	//construtor com parametros
-	public Pessoa(String nome, String sobrenome, int idade) {
-		this.nome = nome;
-		this.sobrenome = sobrenome;
-		this.idade = idade;
-	}
+		public Pessoa(String nome, String sobrenome, int idade, fundamentosBasicos.Estado_civil estado_civil) {
+			super();
+			this.nome = nome;
+			this.sobrenome = sobrenome;
+			this.idade = idade;
+			Estado_civil = estado_civil;
+		}
+	
 	
 	public String toString() {
-				return String.format("%s %s tem %d", nome,sobrenome,idade);
+				return String.format("%s %s tem %d %s", nome,sobrenome,idade,Estado_civil);
 	}
+
 	
 	
 }
