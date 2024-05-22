@@ -1,13 +1,13 @@
 package Messenger;
 
-public class MSNMessenger {
+public class FacebookMessenger{
 	public void enviarMensagem() {
 		validarConectadoInternet();
-		System.out.println("Enviando mensagem pelo MSN Messenger!");
+		System.out.println("Enviando mensagem pelo Facebook Messenger!");
 		salvarHistoricoMensagem();
 	}
 	public void receberMensagem() {
-		System.out.println("Recebendo mensagem pelo MSN Messenger!");
+		System.out.println("Recebendo mensagem pelo Facebook Messenger!");
 	}
 	@SuppressWarnings("unused")
 	private void validarConectadoInternet() {

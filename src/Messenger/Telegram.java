@@ -1,13 +1,13 @@
 package Messenger;
 
-public class MSNMessenger {
+public class Telegram {
 	public void enviarMensagem() {
 		validarConectadoInternet();
-		System.out.println("Enviando mensagem pelo MSN Messenger!");
+		System.out.println("Enviando mensagem pelo Telegran!");
 		salvarHistoricoMensagem();
 	}
 	public void receberMensagem() {
-		System.out.println("Recebendo mensagem pelo MSN Messenger!");
+		System.out.println("Recebendo mensagem pelo Telegram!");
 	}
 	@SuppressWarnings("unused")
 	private void validarConectadoInternet() {
