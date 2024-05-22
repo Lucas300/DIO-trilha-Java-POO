@@ -1,4 +1,4 @@
-package fundamentosBasicos.Modulo2.polimorfismo;
+package fundamentosBasicos.Modulo2.abstracao;
 
 	import java.util.ArrayList;
 	import java.util.List;

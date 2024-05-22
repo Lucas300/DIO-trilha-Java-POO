@@ -1,4 +1,4 @@
-package fundamentosBasicos.Modulo2.polimorfismo;
+package fundamentosBasicos.Modulo2.abstracao;
 
 public class Pessoa_fisica extends Contribuentes {
 	private Double saude;

@@ -1,4 +1,4 @@
-package fundamentosBasicos.Modulo2.polimorfismo;
+package fundamentosBasicos.Modulo2.abstracao;
 
 public abstract class Contribuentes {
 	private String nome;
