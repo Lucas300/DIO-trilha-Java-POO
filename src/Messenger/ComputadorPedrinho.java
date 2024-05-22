@@ -2,18 +2,18 @@ package Messenger;
 
 public class ComputadorPedrinho {
 	public static void main(String[] args) {
-		System.out.println("MSN");
-		MSNMessenger msn = new MSNMessenger();
+		ServicoDeMensagemInstantanea msn = new MSNMessenger();
 		msn.enviarMensagem();
 		msn.receberMensagem();
 		
-		System.out.println("FACEBOOK");
-		FacebookMessenger fcb = new FacebookMessenger();
+		
+		System.out.println();
+		ServicoDeMensagemInstantanea fcb = new FacebookMessenger();
 		fcb.enviarMensagem();
 		fcb.receberMensagem();
 		
-		System.out.println("TELEGRAM");
-		Telegram te = new Telegram();
+		System.out.println();
+		ServicoDeMensagemInstantanea te = new Telegram();
 		te.enviarMensagem();
 		te.receberMensagem();
 	}
