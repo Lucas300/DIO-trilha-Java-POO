@@ -1,11 +1,11 @@
-package Messenger;
+package Messenger.apps;
 
 public class FacebookMessenger extends ServicoDeMensagemInstantanea{
 
 	@Override
 	public void enviarMensagem() {
 		System.out.println("Enviando mensagem pelo FACEBOOK");	
-		
+		validarConectadoInternet();
 	}
 
 	@Override

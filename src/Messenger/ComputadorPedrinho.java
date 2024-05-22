@@ -1,20 +1,26 @@
 package Messenger;
 
+import Messenger.apps.FacebookMessenger;
+import Messenger.apps.MSNMessenger;
+import Messenger.apps.ServicoDeMensagemInstantanea;
+import Messenger.apps.Telegram;
+
 public class ComputadorPedrinho {
 	public static void main(String[] args) {
-		ServicoDeMensagemInstantanea msn = new MSNMessenger();
-		msn.enviarMensagem();
-		msn.receberMensagem();
 		
+		ServicoDeMensagemInstantanea app = null;
 		
-		System.out.println();
-		ServicoDeMensagemInstantanea fcb = new FacebookMessenger();
-		fcb.enviarMensagem();
-		fcb.receberMensagem();
+		String appEscolhido = "tlg";
 		
-		System.out.println();
-		ServicoDeMensagemInstantanea te = new Telegram();
-		te.enviarMensagem();
-		te.receberMensagem();
+		if(appEscolhido.equals("msn")) {
+			app = new MSNMessenger();
+		}else if(appEscolhido.equals("fbm")) {
+			app = new FacebookMessenger();
+		}else if(appEscolhido.equals("tlg")) {
+			app = new  Telegram();			
+		}
+		
+		app.enviarMensagem();
+		app.receberMensagem();
 	}
 }
